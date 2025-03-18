@@ -33,6 +33,17 @@ sk-
 
 ![FindEverything](./pic/FindEverything.png)
 
+常见的Python变量并查看Python版本
+
+```
+python -V
+python2 -V
+python3 -V
+py -V
+py2 -V
+py3 -V
+```
+
 Python3环境
 
 ```
@@ -41,12 +52,28 @@ python3 FindEverything.py -n .txt,.ini,.yaml,.php,.jsp,.java,.xml,.sql -c jdbc:m
 python3 FindEverything.py -n .txt,.ini,.yaml,.php,.jsp,.java,.xml,.sql -c jdbc:mysql -o output.txt
 ```
 
+Python3环境但没有tqdm包
+
+```
+python3 FindEverything-notqdm.py -n .txt,.ini,.yaml,.php,.jsp,.java,.xml,.sql -c "password=" -d D:/
+python3 FindEverything-notqdm.py -n .txt,.ini,.yaml,.php,.jsp,.java,.xml,.sql -c jdbc:mysql
+python3 FindEverything-notqdm.py -n .txt,.ini,.yaml,.php,.jsp,.java,.xml,.sql -c jdbc:mysql -o output.txt
+```
+
 Python2环境
 
 ```
 python2 FindEverything-py2.py -n .txt,.ini,.yaml,.php,.jsp,.java,.xml,.sql -c "password=" -d D:/
 python2 FindEverything-py2.py -n .txt,.ini,.yaml,.php,.jsp,.java,.xml,.sql -c jdbc:mysql
 python2 FindEverything-py2.py -n .txt,.ini,.yaml,.php,.jsp,.java,.xml,.sql -c jdbc:mysql -o output.txt
+```
+
+没有Python环境则使用sh
+
+```
+./FindEverything.sh -n .txt,.ini,.yaml,.php,.jsp,.java,.xml,.sql -c "password=" -d D:/
+./FindEverything.sh -n .txt,.ini,.yaml,.php,.jsp,.java,.xml,.sql -c jdbc:mysql
+./FindEverything.sh -n .txt,.ini,.yaml,.php,.jsp,.java,.xml,.sql -c jdbc:mysql -o output.txt
 ```
 
 ## 🙏 感谢各位师傅
