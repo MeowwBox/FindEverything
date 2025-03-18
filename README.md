@@ -33,7 +33,7 @@ sk-
 
 ![FindEverything](./pic/FindEverything.png)
 
-常见的Python变量并查看Python版本
+Python的默认安装路径是 `/usr/bin/python` 或 `/usr/local/bin/python`，通过以下命令可以尝试常见Python变量并查看版本 `-V`
 
 ```
 python -V
