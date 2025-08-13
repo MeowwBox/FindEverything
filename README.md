@@ -78,6 +78,12 @@ python2 FindEverything-py2.py -n .txt,.ini,.yaml,.php,.jsp,.java,.xml,.sql -c jd
 ./FindEverything.sh -n .txt,.ini,.yaml,.php,.jsp,.java,.xml,.sql -c jdbc:mysql -o output.txt
 ```
 
+其他小技巧
+
+```
+find / -type f \( -iname "*.conf" -o -iname "*.yml" -o -iname "*.yaml" -o -iname "*.ini" \)
+```
+
 ## 🙏 感谢各位师傅
 
 [![Star History Chart](https://api.star-history.com/svg?repos=AabyssZG/FindEverything&type=Date)](https://star-history.com/#AabyssZG/FindEverything&Date)
